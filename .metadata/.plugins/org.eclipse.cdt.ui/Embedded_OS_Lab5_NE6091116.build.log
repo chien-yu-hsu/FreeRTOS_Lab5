@@ -1,0 +1,158 @@
+14:57:10 **** Incremental Build of configuration Debug for project Embedded_OS_Lab5_NE6091116 ****
+make -j8 all 
+arm-none-eabi-gcc "../USB_HOST/Target/usbh_conf.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include" -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/portable/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"USB_HOST/Target/usbh_conf.d" -MT"USB_HOST/Target/usbh_conf.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "USB_HOST/Target/usbh_conf.o"
+arm-none-eabi-gcc "../USB_HOST/Target/usbh_platform.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include" -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/portable/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"USB_HOST/Target/usbh_platform.d" -MT"USB_HOST/Target/usbh_platform.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "USB_HOST/Target/usbh_platform.o"
+arm-none-eabi-gcc "../USB_HOST/App/usb_host.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include" -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/portable/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"USB_HOST/App/usb_host.d" -MT"USB_HOST/App/usb_host.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "USB_HOST/App/usb_host.o"
+arm-none-eabi-gcc "../Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_core.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include" -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/portable/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_core.d" -MT"Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_core.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_core.o"
+arm-none-eabi-gcc "../Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include" -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/portable/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.d" -MT"Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.o"
+arm-none-eabi-gcc "../Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ioreq.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include" -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/portable/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ioreq.d" -MT"Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ioreq.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ioreq.o"
+arm-none-eabi-gcc "../Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_pipes.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include" -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/portable/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_pipes.d" -MT"Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_pipes.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_pipes.o"
+arm-none-eabi-gcc "../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Src/usbh_cdc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include" -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/portable/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Src/usbh_cdc.d" -MT"Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Src/usbh_cdc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Src/usbh_cdc.o"
+arm-none-eabi-gcc "../FreeRTOS/portable/MemMang/heap_2.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include" -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/portable/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"FreeRTOS/portable/MemMang/heap_2.d" -MT"FreeRTOS/portable/MemMang/heap_2.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "FreeRTOS/portable/MemMang/heap_2.o"
+arm-none-eabi-gcc "../FreeRTOS/portable/ARM_CM4F/port.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include" -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/portable/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"FreeRTOS/portable/ARM_CM4F/port.d" -MT"FreeRTOS/portable/ARM_CM4F/port.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "FreeRTOS/portable/ARM_CM4F/port.o"
+arm-none-eabi-gcc "../FreeRTOS/croutine.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include" -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/portable/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"FreeRTOS/croutine.d" -MT"FreeRTOS/croutine.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "FreeRTOS/croutine.o"
+arm-none-eabi-gcc "../FreeRTOS/event_groups.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include" -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/portable/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"FreeRTOS/event_groups.d" -MT"FreeRTOS/event_groups.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "FreeRTOS/event_groups.o"
+arm-none-eabi-gcc "../FreeRTOS/queue.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include" -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/portable/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"FreeRTOS/queue.d" -MT"FreeRTOS/queue.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "FreeRTOS/queue.o"
+arm-none-eabi-gcc "../FreeRTOS/stream_buffer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include" -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/portable/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"FreeRTOS/stream_buffer.d" -MT"FreeRTOS/stream_buffer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "FreeRTOS/stream_buffer.o"
+arm-none-eabi-gcc "../FreeRTOS/tasks.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include" -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/portable/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"FreeRTOS/tasks.d" -MT"FreeRTOS/tasks.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "FreeRTOS/tasks.o"
+arm-none-eabi-gcc "../FreeRTOS/timers.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include" -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/portable/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"FreeRTOS/timers.d" -MT"FreeRTOS/timers.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "FreeRTOS/timers.o"
+In file included from ../FreeRTOS/croutine.c:29:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include/task.h:42:1: error: unknown type name 'UART_HandleTypeDef'; did you mean 'HCD_HandleTypeDef'?
+ UART_HandleTypeDef huart2; // for USART2
+ ^~~~~~~~~~~~~~~~~~
+ HCD_HandleTypeDef
+In file included from ../FreeRTOS/event_groups.c:38:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include/task.h:42:1: error: unknown type name 'UART_HandleTypeDef'; did you mean 'HCD_HandleTypeDef'?
+ UART_HandleTypeDef huart2; // for USART2
+ ^~~~~~~~~~~~~~~~~~
+ HCD_HandleTypeDef
+In file included from ../FreeRTOS/portable/MemMang/heap_2.c:45:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include/task.h:42:1: error: unknown type name 'UART_HandleTypeDef'; did you mean 'HCD_HandleTypeDef'?
+ UART_HandleTypeDef huart2; // for USART2
+ ^~~~~~~~~~~~~~~~~~
+ HCD_HandleTypeDef
+In file included from ../FreeRTOS/stream_buffer.c:39:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include/task.h:42:1: error: unknown type name 'UART_HandleTypeDef'; did you mean 'HCD_HandleTypeDef'?
+ UART_HandleTypeDef huart2; // for USART2
+ ^~~~~~~~~~~~~~~~~~
+ HCD_HandleTypeDef
+In file included from ../FreeRTOS/queue.c:37:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include/task.h:42:1: error: unknown type name 'UART_HandleTypeDef'; did you mean 'HCD_HandleTypeDef'?
+ UART_HandleTypeDef huart2; // for USART2
+ ^~~~~~~~~~~~~~~~~~
+ HCD_HandleTypeDef
+In file included from ../FreeRTOS/croutine.c:29:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include/task.h:237:1: error: unknown type name 'UART_HandleTypeDef'; did you mean 'HCD_HandleTypeDef'?
+ UART_HandleTypeDef huart2; // for USART2
+ ^~~~~~~~~~~~~~~~~~
+ HCD_HandleTypeDef
+In file included from ../FreeRTOS/portable/ARM_CM4F/port.c:34:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include/task.h:42:1: error: unknown type name 'UART_HandleTypeDef'; did you mean 'HCD_HandleTypeDef'?
+ UART_HandleTypeDef huart2; // for USART2
+ ^~~~~~~~~~~~~~~~~~
+ HCD_HandleTypeDef
+In file included from ../FreeRTOS/event_groups.c:38:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include/task.h:237:1: error: unknown type name 'UART_HandleTypeDef'; did you mean 'HCD_HandleTypeDef'?
+ UART_HandleTypeDef huart2; // for USART2
+ ^~~~~~~~~~~~~~~~~~
+ HCD_HandleTypeDef
+In file included from ../FreeRTOS/queue.c:37:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include/task.h:237:1: error: unknown type name 'UART_HandleTypeDef'; did you mean 'HCD_HandleTypeDef'?
+ UART_HandleTypeDef huart2; // for USART2
+ ^~~~~~~~~~~~~~~~~~
+ HCD_HandleTypeDef
+In file included from ../FreeRTOS/stream_buffer.c:39:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include/task.h:237:1: error: unknown type name 'UART_HandleTypeDef'; did you mean 'HCD_HandleTypeDef'?
+ UART_HandleTypeDef huart2; // for USART2
+ ^~~~~~~~~~~~~~~~~~
+ HCD_HandleTypeDef
+In file included from ../FreeRTOS/portable/MemMang/heap_2.c:45:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include/task.h:237:1: error: unknown type name 'UART_HandleTypeDef'; did you mean 'HCD_HandleTypeDef'?
+ UART_HandleTypeDef huart2; // for USART2
+ ^~~~~~~~~~~~~~~~~~
+ HCD_HandleTypeDef
+../FreeRTOS/portable/MemMang/heap_2.c: In function 'pvPortMalloc':
+../FreeRTOS/portable/MemMang/heap_2.c:155:6: warning: unused variable 'data' [-Wunused-variable]
+ char data[80];
+      ^~~~
+../FreeRTOS/portable/MemMang/heap_2.c:154:18: warning: variable 'WantedSize' set but not used [-Wunused-but-set-variable]
+ size_t BlockSize,WantedSize;
+                  ^~~~~~~~~~
+../FreeRTOS/portable/MemMang/heap_2.c:154:8: warning: variable 'BlockSize' set but not used [-Wunused-but-set-variable]
+ size_t BlockSize,WantedSize;
+        ^~~~~~~~~
+In file included from ../FreeRTOS/portable/ARM_CM4F/port.c:34:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include/task.h:237:1: error: unknown type name 'UART_HandleTypeDef'; did you mean 'HCD_HandleTypeDef'?
+ UART_HandleTypeDef huart2; // for USART2
+ ^~~~~~~~~~~~~~~~~~
+ HCD_HandleTypeDef
+make: *** [FreeRTOS/subdir.mk:36: FreeRTOS/croutine.o] Error 1
+make: *** Waiting for unfinished jobs....
+../FreeRTOS/portable/MemMang/heap_2.c: In function 'vPrintFreeList':
+../FreeRTOS/portable/MemMang/heap_2.c:311:2: warning: implicit declaration of function 'HAL_UART_Transmit'; did you mean 'HAL_SPI_Transmit'? [-Wimplicit-function-declaration]
+  HAL_UART_Transmit(&huart2, (uint8_t *)array,strlen(array),0xffff);//?ç∞title,transmit?Ç≥??
+  ^~~~~~~~~~~~~~~~~
+  HAL_SPI_Transmit
+../FreeRTOS/portable/MemMang/heap_2.c:331:20: warning: passing argument 1 of 'Uint32ConvertHex' makes integer from pointer without a cast [-Wint-conversion]
+   Uint32ConvertHex(pxLinkList,&StartAddress);//ËΩâÊ??16?≤Âà∂??çÊîæ?≤char
+                    ^~~~~~~~~~
+In file included from ../FreeRTOS/portable/MemMang/heap_2.c:45:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include/task.h:240:6: note: expected 'uint32_t {aka long unsigned int}' but argument is of type 'BlockLink_t * {aka struct A_BLOCK_LINK *}'
+ void Uint32ConvertHex(volatile StackType_t ,char *);
+      ^~~~~~~~~~~~~~~~
+../FreeRTOS/portable/MemMang/heap_2.c:331:31: warning: passing argument 2 of 'Uint32ConvertHex' from incompatible pointer type [-Wincompatible-pointer-types]
+   Uint32ConvertHex(pxLinkList,&StartAddress);//ËΩâÊ??16?≤Âà∂??çÊîæ?≤char
+                               ^
+In file included from ../FreeRTOS/portable/MemMang/heap_2.c:45:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include/task.h:240:6: note: expected 'char *' but argument is of type 'char (*)[10]'
+ void Uint32ConvertHex(volatile StackType_t ,char *);
+      ^~~~~~~~~~~~~~~~
+In file included from ../FreeRTOS/tasks.c:39:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include/task.h:42:1: error: unknown type name 'UART_HandleTypeDef'; did you mean 'HCD_HandleTypeDef'?
+ UART_HandleTypeDef huart2; // for USART2
+ ^~~~~~~~~~~~~~~~~~
+ HCD_HandleTypeDef
+make: *** [FreeRTOS/portable/ARM_CM4F/subdir.mk:18: FreeRTOS/portable/ARM_CM4F/port.o] Error 1
+../FreeRTOS/portable/MemMang/heap_2.c:334:20: warning: passing argument 1 of 'Uint32ConvertHex' makes integer from pointer without a cast [-Wint-conversion]
+   Uint32ConvertHex(pxLinkListEnd,&EndAddress);
+                    ^~~~~~~~~~~~~
+make: *** [FreeRTOS/subdir.mk:38: FreeRTOS/event_groups.o] Error 1
+In file included from ../FreeRTOS/portable/MemMang/heap_2.c:45:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include/task.h:240:6: note: expected 'uint32_t {aka long unsigned int}' but argument is of type 'BlockLink_t * {aka struct A_BLOCK_LINK *}'
+ void Uint32ConvertHex(volatile StackType_t ,char *);
+      ^~~~~~~~~~~~~~~~
+make: *** [FreeRTOS/subdir.mk:42: FreeRTOS/queue.o] Error 1
+../FreeRTOS/portable/MemMang/heap_2.c:334:34: warning: passing argument 2 of 'Uint32ConvertHex' from incompatible pointer type [-Wincompatible-pointer-types]
+   Uint32ConvertHex(pxLinkListEnd,&EndAddress);
+                                  ^
+make: *** [FreeRTOS/subdir.mk:44: FreeRTOS/stream_buffer.o] Error 1
+In file included from ../FreeRTOS/portable/MemMang/heap_2.c:45:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include/task.h:240:6: note: expected 'char *' but argument is of type 'char (*)[10]'
+ void Uint32ConvertHex(volatile StackType_t ,char *);
+      ^~~~~~~~~~~~~~~~
+In file included from ../FreeRTOS/tasks.c:39:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include/task.h:237:1: error: unknown type name 'UART_HandleTypeDef'; did you mean 'HCD_HandleTypeDef'?
+ UART_HandleTypeDef huart2; // for USART2
+ ^~~~~~~~~~~~~~~~~~
+ HCD_HandleTypeDef
+make: *** [FreeRTOS/portable/MemMang/subdir.mk:18: FreeRTOS/portable/MemMang/heap_2.o] Error 1
+In file included from ../FreeRTOS/timers.c:37:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include/task.h:42:1: error: unknown type name 'UART_HandleTypeDef'; did you mean 'HCD_HandleTypeDef'?
+ UART_HandleTypeDef huart2; // for USART2
+ ^~~~~~~~~~~~~~~~~~
+ HCD_HandleTypeDef
+../FreeRTOS/tasks.c: In function 'Uint32ConvertHex':
+../FreeRTOS/tasks.c:5212:3: warning: statement with no effect [-Wunused-value]
+   for(reversal;reversal<=(end/2)+1;reversal++){
+   ^~~
+In file included from ../FreeRTOS/timers.c:37:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab5_NE6091116/FreeRTOS/include/task.h:237:1: error: unknown type name 'UART_HandleTypeDef'; did you mean 'HCD_HandleTypeDef'?
+ UART_HandleTypeDef huart2; // for USART2
+ ^~~~~~~~~~~~~~~~~~
+ HCD_HandleTypeDef
+make: *** [FreeRTOS/subdir.mk:46: FreeRTOS/tasks.o] Error 1
+make: *** [FreeRTOS/subdir.mk:48: FreeRTOS/timers.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+14:57:13 Build Failed. 25 errors, 9 warnings. (took 2s.565ms)
+

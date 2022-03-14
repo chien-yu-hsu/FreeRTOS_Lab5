@@ -1,0 +1,164 @@
+21:27:39 **** Incremental Build of configuration Debug for project Embedded_OS_Lab3_NE6091116 ****
+make -j8 all 
+arm-none-eabi-gcc "../FreeRTOS/tasks.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab3_NE6091116/FreeRTOS/include" -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab3_NE6091116/FreeRTOS/portable/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"FreeRTOS/tasks.d" -MT"FreeRTOS/tasks.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "FreeRTOS/tasks.o"
+../FreeRTOS/tasks.c: In function 'Taskmonitor':
+../FreeRTOS/tasks.c:5244:39: warning: passing argument 2 of 'LongConvertCharArray' from incompatible pointer type [-Wincompatible-pointer-types]
+     LongConvertCharArray(ScanPriority,&temp);
+                                       ^
+In file included from ../FreeRTOS/tasks.c:39:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab3_NE6091116/FreeRTOS/include/task.h:234:6: note: expected 'char *' but argument is of type 'char (*)[15]'
+ void LongConvertCharArray(UBaseType_t ,char *);
+      ^~~~~~~~~~~~~~~~~~~~
+../FreeRTOS/tasks.c:5248:43: warning: passing argument 2 of 'LongConvertCharArray' from incompatible pointer type [-Wincompatible-pointer-types]
+     LongConvertCharArray(ScanBasePriority,&temp);
+                                           ^
+In file included from ../FreeRTOS/tasks.c:39:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab3_NE6091116/FreeRTOS/include/task.h:234:6: note: expected 'char *' but argument is of type 'char (*)[15]'
+ void LongConvertCharArray(UBaseType_t ,char *);
+      ^~~~~~~~~~~~~~~~~~~~
+../FreeRTOS/tasks.c:5254:22: warning: passing argument 1 of 'Uint32ConvertHex' makes integer from pointer without a cast [-Wint-conversion]
+     Uint32ConvertHex(ScanStack,&temp);
+                      ^~~~~~~~~
+In file included from ../FreeRTOS/tasks.c:39:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab3_NE6091116/FreeRTOS/include/task.h:235:6: note: expected 'StackType_t {aka volatile long unsigned int}' but argument is of type 'StackType_t * {aka long unsigned int *}'
+ void Uint32ConvertHex(volatile StackType_t ,char *);
+      ^~~~~~~~~~~~~~~~
+../FreeRTOS/tasks.c:5254:32: warning: passing argument 2 of 'Uint32ConvertHex' from incompatible pointer type [-Wincompatible-pointer-types]
+     Uint32ConvertHex(ScanStack,&temp);
+                                ^
+In file included from ../FreeRTOS/tasks.c:39:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab3_NE6091116/FreeRTOS/include/task.h:235:6: note: expected 'char *' but argument is of type 'char (*)[15]'
+ void Uint32ConvertHex(volatile StackType_t ,char *);
+      ^~~~~~~~~~~~~~~~
+../FreeRTOS/tasks.c:5259:20: warning: assignment discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     ScanTopOfStack = pxTCB->pxTopOfStack;
+                    ^
+../FreeRTOS/tasks.c:5260:22: warning: passing argument 1 of 'Uint32ConvertHex' makes integer from pointer without a cast [-Wint-conversion]
+     Uint32ConvertHex(ScanTopOfStack,&temp);
+                      ^~~~~~~~~~~~~~
+In file included from ../FreeRTOS/tasks.c:39:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab3_NE6091116/FreeRTOS/include/task.h:235:6: note: expected 'StackType_t {aka volatile long unsigned int}' but argument is of type 'StackType_t * {aka long unsigned int *}'
+ void Uint32ConvertHex(volatile StackType_t ,char *);
+      ^~~~~~~~~~~~~~~~
+../FreeRTOS/tasks.c:5260:37: warning: passing argument 2 of 'Uint32ConvertHex' from incompatible pointer type [-Wincompatible-pointer-types]
+     Uint32ConvertHex(ScanTopOfStack,&temp);
+                                     ^
+In file included from ../FreeRTOS/tasks.c:39:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab3_NE6091116/FreeRTOS/include/task.h:235:6: note: expected 'char *' but argument is of type 'char (*)[15]'
+ void Uint32ConvertHex(volatile StackType_t ,char *);
+      ^~~~~~~~~~~~~~~~
+../FreeRTOS/tasks.c:5281:37: warning: passing argument 2 of 'LongConvertCharArray' from incompatible pointer type [-Wincompatible-pointer-types]
+   LongConvertCharArray(ScanPriority,&temp);
+                                     ^
+In file included from ../FreeRTOS/tasks.c:39:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab3_NE6091116/FreeRTOS/include/task.h:234:6: note: expected 'char *' but argument is of type 'char (*)[15]'
+ void LongConvertCharArray(UBaseType_t ,char *);
+      ^~~~~~~~~~~~~~~~~~~~
+../FreeRTOS/tasks.c:5285:41: warning: passing argument 2 of 'LongConvertCharArray' from incompatible pointer type [-Wincompatible-pointer-types]
+   LongConvertCharArray(ScanBasePriority,&temp);
+                                         ^
+In file included from ../FreeRTOS/tasks.c:39:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab3_NE6091116/FreeRTOS/include/task.h:234:6: note: expected 'char *' but argument is of type 'char (*)[15]'
+ void LongConvertCharArray(UBaseType_t ,char *);
+      ^~~~~~~~~~~~~~~~~~~~
+../FreeRTOS/tasks.c:5291:20: warning: passing argument 1 of 'Uint32ConvertHex' makes integer from pointer without a cast [-Wint-conversion]
+   Uint32ConvertHex(ScanStack,&temp);
+                    ^~~~~~~~~
+In file included from ../FreeRTOS/tasks.c:39:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab3_NE6091116/FreeRTOS/include/task.h:235:6: note: expected 'StackType_t {aka volatile long unsigned int}' but argument is of type 'StackType_t * {aka long unsigned int *}'
+ void Uint32ConvertHex(volatile StackType_t ,char *);
+      ^~~~~~~~~~~~~~~~
+../FreeRTOS/tasks.c:5291:30: warning: passing argument 2 of 'Uint32ConvertHex' from incompatible pointer type [-Wincompatible-pointer-types]
+   Uint32ConvertHex(ScanStack,&temp);
+                              ^
+In file included from ../FreeRTOS/tasks.c:39:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab3_NE6091116/FreeRTOS/include/task.h:235:6: note: expected 'char *' but argument is of type 'char (*)[15]'
+ void Uint32ConvertHex(volatile StackType_t ,char *);
+      ^~~~~~~~~~~~~~~~
+../FreeRTOS/tasks.c:5296:18: warning: assignment discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   ScanTopOfStack = pxTCB->pxTopOfStack;
+                  ^
+../FreeRTOS/tasks.c:5297:20: warning: passing argument 1 of 'Uint32ConvertHex' makes integer from pointer without a cast [-Wint-conversion]
+   Uint32ConvertHex(ScanTopOfStack,&temp);
+                    ^~~~~~~~~~~~~~
+In file included from ../FreeRTOS/tasks.c:39:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab3_NE6091116/FreeRTOS/include/task.h:235:6: note: expected 'StackType_t {aka volatile long unsigned int}' but argument is of type 'StackType_t * {aka long unsigned int *}'
+ void Uint32ConvertHex(volatile StackType_t ,char *);
+      ^~~~~~~~~~~~~~~~
+../FreeRTOS/tasks.c:5297:35: warning: passing argument 2 of 'Uint32ConvertHex' from incompatible pointer type [-Wincompatible-pointer-types]
+   Uint32ConvertHex(ScanTopOfStack,&temp);
+                                   ^
+In file included from ../FreeRTOS/tasks.c:39:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab3_NE6091116/FreeRTOS/include/task.h:235:6: note: expected 'char *' but argument is of type 'char (*)[15]'
+ void Uint32ConvertHex(volatile StackType_t ,char *);
+      ^~~~~~~~~~~~~~~~
+../FreeRTOS/tasks.c:5316:37: warning: passing argument 2 of 'LongConvertCharArray' from incompatible pointer type [-Wincompatible-pointer-types]
+   LongConvertCharArray(ScanPriority,&temp);
+                                     ^
+In file included from ../FreeRTOS/tasks.c:39:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab3_NE6091116/FreeRTOS/include/task.h:234:6: note: expected 'char *' but argument is of type 'char (*)[15]'
+ void LongConvertCharArray(UBaseType_t ,char *);
+      ^~~~~~~~~~~~~~~~~~~~
+../FreeRTOS/tasks.c:5320:41: warning: passing argument 2 of 'LongConvertCharArray' from incompatible pointer type [-Wincompatible-pointer-types]
+   LongConvertCharArray(ScanBasePriority,&temp);
+                                         ^
+In file included from ../FreeRTOS/tasks.c:39:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab3_NE6091116/FreeRTOS/include/task.h:234:6: note: expected 'char *' but argument is of type 'char (*)[15]'
+ void LongConvertCharArray(UBaseType_t ,char *);
+      ^~~~~~~~~~~~~~~~~~~~
+../FreeRTOS/tasks.c:5326:20: warning: passing argument 1 of 'Uint32ConvertHex' makes integer from pointer without a cast [-Wint-conversion]
+   Uint32ConvertHex(ScanStack,&temp);
+                    ^~~~~~~~~
+In file included from ../FreeRTOS/tasks.c:39:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab3_NE6091116/FreeRTOS/include/task.h:235:6: note: expected 'StackType_t {aka volatile long unsigned int}' but argument is of type 'StackType_t * {aka long unsigned int *}'
+ void Uint32ConvertHex(volatile StackType_t ,char *);
+      ^~~~~~~~~~~~~~~~
+../FreeRTOS/tasks.c:5326:30: warning: passing argument 2 of 'Uint32ConvertHex' from incompatible pointer type [-Wincompatible-pointer-types]
+   Uint32ConvertHex(ScanStack,&temp);
+                              ^
+In file included from ../FreeRTOS/tasks.c:39:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab3_NE6091116/FreeRTOS/include/task.h:235:6: note: expected 'char *' but argument is of type 'char (*)[15]'
+ void Uint32ConvertHex(volatile StackType_t ,char *);
+      ^~~~~~~~~~~~~~~~
+../FreeRTOS/tasks.c:5331:18: warning: assignment discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   ScanTopOfStack = pxTCB->pxTopOfStack;
+                  ^
+../FreeRTOS/tasks.c:5332:20: warning: passing argument 1 of 'Uint32ConvertHex' makes integer from pointer without a cast [-Wint-conversion]
+   Uint32ConvertHex(ScanTopOfStack,&temp);
+                    ^~~~~~~~~~~~~~
+In file included from ../FreeRTOS/tasks.c:39:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab3_NE6091116/FreeRTOS/include/task.h:235:6: note: expected 'StackType_t {aka volatile long unsigned int}' but argument is of type 'StackType_t * {aka long unsigned int *}'
+ void Uint32ConvertHex(volatile StackType_t ,char *);
+      ^~~~~~~~~~~~~~~~
+../FreeRTOS/tasks.c:5332:35: warning: passing argument 2 of 'Uint32ConvertHex' from incompatible pointer type [-Wincompatible-pointer-types]
+   Uint32ConvertHex(ScanTopOfStack,&temp);
+                                   ^
+In file included from ../FreeRTOS/tasks.c:39:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab3_NE6091116/FreeRTOS/include/task.h:235:6: note: expected 'char *' but argument is of type 'char (*)[15]'
+ void Uint32ConvertHex(volatile StackType_t ,char *);
+      ^~~~~~~~~~~~~~~~
+../FreeRTOS/tasks.c: In function 'LongConvertCharArray':
+../FreeRTOS/tasks.c:5356:3: warning: statement with no effect [-Wunused-value]
+   for(reversal;reversal<(end/2)+1;reversal++){
+   ^~~
+../FreeRTOS/tasks.c: In function 'Uint32ConvertHex':
+../FreeRTOS/tasks.c:5384:2: warning: statement with no effect [-Wunused-value]
+  for(reversal;reversal<(end/2)+1;reversal++){
+  ^~~
+arm-none-eabi-gcc -o "Embedded_OS_Lab3_NE6091116.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\chien\STM32CubeIDE\workspace_1.5.1\Embedded_OS_Lab3_NE6091116\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Embedded_OS_Lab3_NE6091116.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Embedded_OS_Lab3_NE6091116.elf
+ 
+arm-none-eabi-objdump -h -S  Embedded_OS_Lab3_NE6091116.elf  > "Embedded_OS_Lab3_NE6091116.list"
+arm-none-eabi-objcopy  -O binary  Embedded_OS_Lab3_NE6091116.elf  "Embedded_OS_Lab3_NE6091116.bin"
+arm-none-eabi-size   Embedded_OS_Lab3_NE6091116.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22080	     24	  79112	 101216	  18b60	Embedded_OS_Lab3_NE6091116.elf
+Finished building: default.size.stdout
+ 
+Finished building: Embedded_OS_Lab3_NE6091116.bin
+ 
+Finished building: Embedded_OS_Lab3_NE6091116.list
+ 
+
+21:27:41 Build Finished. 0 errors, 23 warnings. (took 1s.926ms)
+

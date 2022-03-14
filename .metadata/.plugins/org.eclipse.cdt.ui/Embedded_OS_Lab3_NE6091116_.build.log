@@ -1,0 +1,34 @@
+16:28:49 **** Incremental Build of configuration Debug for project Embedded_OS_Lab3_NE6091116_ ****
+make -j8 all 
+arm-none-eabi-gcc "../FreeRTOS/tasks.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab3_NE6091116/FreeRTOS/include" -I"C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab3_NE6091116/FreeRTOS/portable/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"FreeRTOS/tasks.d" -MT"FreeRTOS/tasks.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "FreeRTOS/tasks.o"
+../FreeRTOS/tasks.c: In function 'xTaskCreate':
+../FreeRTOS/tasks.c:741:38: error: 'name' undeclared (first use in this function); did you mean 'pcName'?
+  HAL_UART_Transmit(&huart2,(uint8_t*)name,strlen(name),0xffff);
+                                      ^~~~
+                                      pcName
+../FreeRTOS/tasks.c:741:38: note: each undeclared identifier is reported only once for each function it appears in
+../FreeRTOS/tasks.c: In function 'Taskmonitor':
+../FreeRTOS/tasks.c:5224:9: warning: variable 'pxTCB' set but not used [-Wunused-but-set-variable]
+  TCB_t *pxTCB;
+         ^~~~~
+../FreeRTOS/tasks.c: At top level:
+../FreeRTOS/tasks.c:5244:6: error: conflicting types for 'LongConvertCharArray'
+ void LongConvertCharArray(UBaseType_t TxScanTaskPriority, char *charTxScanTaskStack, int *index){
+      ^~~~~~~~~~~~~~~~~~~~
+In file included from ../FreeRTOS/tasks.c:39:0:
+C:/Users/chien/STM32CubeIDE/workspace_1.5.1/Embedded_OS_Lab3_NE6091116/FreeRTOS/include/task.h:234:6: note: previous declaration of 'LongConvertCharArray' was here
+ void LongConvertCharArray(UBaseType_t ,char *);
+      ^~~~~~~~~~~~~~~~~~~~
+../FreeRTOS/tasks.c: In function 'LongConvertCharArray':
+../FreeRTOS/tasks.c:5258:3: warning: statement with no effect [-Wunused-value]
+   for(reversal;reversal<=(end/2)+1;reversal++){
+   ^~~
+../FreeRTOS/tasks.c: In function 'Uint32ConvertHex':
+../FreeRTOS/tasks.c:5286:2: warning: statement with no effect [-Wunused-value]
+  for(reversal;reversal<=(end/2)+1;reversal++){
+  ^~~
+make: *** [FreeRTOS/subdir.mk:46: FreeRTOS/tasks.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+16:28:50 Build Failed. 3 errors, 3 warnings. (took 670ms)
+

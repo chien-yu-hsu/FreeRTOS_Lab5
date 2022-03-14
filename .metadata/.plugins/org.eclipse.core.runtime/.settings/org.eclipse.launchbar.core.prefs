@@ -1,0 +1,13 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Embedded_OS_Lab1_NE6091116 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Embedded_OS_Lab2_NE6091116 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Embedded_OS_Lab3_NE6091116,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Embedded_OS_Lab4_NE6091116 Debug
+eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Embedded_OS_Lab1_NE6091116\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Embedded_OS_Lab1_NE6091116\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Embedded_OS_Lab2_NE6091116\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Embedded_OS_Lab3_NE6091116/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Embedded_OS_Lab3_NE6091116_\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Embedded_OS_Lab4_NE6091116\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:fat/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Embedded_OS_Lab3_NE6091116_\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
